@@ -1,0 +1,1 @@
+shop: build/shop.o 
