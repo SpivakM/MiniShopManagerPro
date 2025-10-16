@@ -6,6 +6,8 @@ int main(void) {
 	printf("--- Menu ---\n");
 	printf("LIST OF COMMANDS\n");
 
+	vector<Item> items;
+
 	do {
 		printf("Enter command: ");
 		scanf("%d", &command);

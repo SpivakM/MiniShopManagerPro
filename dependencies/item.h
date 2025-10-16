@@ -1,3 +1,7 @@
+#ifndef ITEM_H
+
+#define ITEM_H 1
+
 #include <string>
 #include <vector>
 #include <iostream>
@@ -9,5 +13,5 @@ struct Item {
     double price;
     unsigned int amount;
 };
+#endif 
 
-vector<Item> items;
