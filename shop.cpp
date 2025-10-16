@@ -12,21 +12,44 @@ int main(void) {
 		printf("Enter command: ");
 		scanf("%d", &command);
 
-		// check inpurt
+		// TODO: check inpurt
+		
+		
 
 		switch (command) {
-			case 1: break;
-			case 2: break;
-			case 3: break;
-			case 4: break;
-			case 5: break;
-			case 6: break;
-			case 7: break;
-			case 8: break;
-			case 9: break;
-			case 10: break;
-			case 11: break;
-			default: break;
+			case 1: 
+				add_item(items);
+				break;
+			case 2: 
+				buy_item(items);
+				break;
+			case 3: 
+				change_item_price(items);
+				break;
+			case 4: 
+				delete_item(items);
+				break;
+			case 5: 
+				discount(items);
+				break;
+			case 6: 
+				find_item_by_name(items);
+				break;
+			case 7: 
+				find_item_with_max_price(items);
+				break;
+			case 8: 
+				list_items(items);
+				break;
+			case 9: 
+				list_under_100(items);
+				break;
+			case 10: 
+				total_price(items);
+				break;
+			default: 
+				printf("Wrong command. Try again.\n");
+				break;
 		} 
 	} while (1);
 
