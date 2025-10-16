@@ -1,36 +1,36 @@
-shop: build/shop.o build/buy_item.o build/change_item_price.o build/delete_item.o build/discount.o build/find_item_by_name.o build/find_item_with_max_price.o build/list_items.o build/list_under_100.o build/total_price.o build.shop.h
-	g++ -o build/shop build/shop.o
+shop: build/shop.o build/add_item.o build/buy_item.o build/change_item_price.o build/delete_item.o build/discount.o build/find_item_by_name.o build/find_item_with_max_price.o build/list_items.o build/list_under_100.o build/total_price.o shop.h
+	g++ -o build/shop build/shop.o build/buy_item.o build/change_item_price.o build/delete_item.o build/discount.o build/find_item_by_name.o build/find_item_with_max_price.o build/list_items.o build/list_under_100.o build/total_price.o 
 
 build/shop.o: shop.cpp shop.h
-	g++ -o build/shop.o shop.cpp
+	g++ -o build/shop.o -c shop.cpp
 
 build/add_item.o: dependencies/add_item.cpp dependencies/add_item.h
-	g++ -o build/add_item.o dependencies/add_item.cpp
+	g++ -o build/add_item.o -c dependencies/add_item.cpp
 
 build/buy_item.o: dependencies/buy_item.cpp dependencies/buy_item.h
-	g++ -o build/buy_item.o dependencies/buy_item.cpp
+	g++ -o build/buy_item.o -c dependencies/buy_item.cpp
 
 build/change_item_price.o: dependencies/change_item_price.cpp dependencies/change_item_price.h
-	g++ -o build/change_item_price.o dependencies/change_item_price.cpp
+	g++ -o build/change_item_price.o -c dependencies/change_item_price.cpp
 
 build/delete_item.o: dependencies/delete_item.cpp dependencies/delete_item.h
-	g++ -o build/delete_item.o dependencies/delete_item.cpp
+	g++ -o build/delete_item.o -c dependencies/delete_item.cpp
 
 build/discount.o: dependencies/discount.cpp dependencies/discount.h
-	g++ -o build/discount.o dependencies/discount.cpp
+	g++ -o build/discount.o -c dependencies/discount.cpp
 
 build/find_item_by_name.o: dependencies/find_item_by_name.cpp dependencies/find_item_by_name.h
-	g++ -o build/find_item_by_name.o dependencies/find_item_by_name.cpp
+	g++ -o build/find_item_by_name.o -c dependencies/find_item_by_name.cpp
 
 build/find_item_with_max_price.o: dependencies/find_item_with_max_price.cpp dependencies/find_item_with_max_price.h
-	g++ -o build/find_item_with_max_price.o dependencies/find_item_with_max_price.cpp
+	g++ -o build/find_item_with_max_price.o -c dependencies/find_item_with_max_price.cpp
 
 build/list_items.o: dependencies/list_items.cpp dependencies/list_items.h
-	g++ -o build/list_items.o dependencies/list_items.cpp
+	g++ -o build/list_items.o -c dependencies/list_items.cpp
 
 build/list_under_100.o: dependencies/list_under_100.cpp dependencies/list_under_100.h
-	g++ -o build/list_under_100.o dependencies/list_under_100.cpp
+	g++ -o build/list_under_100.o -c dependencies/list_under_100.cpp
 
 build/total_price.o: dependencies/total_price.cpp dependencies/total_price.h
-	g++ -o build/total_price.o dependencies/total_price.cpp
+	g++ -o build/total_price.o -c dependencies/total_price.cpp
 

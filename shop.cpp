@@ -1,16 +1,4 @@
 #include <stdio.h>
-#include "dependencies/item.h"
-
-using namespace std;
-
-struct Item {
-	string name;
-	double price;
-	unsigned int amount;
-};
-
-vector<Item> items;
-
 #include "shop.h"
 
 int main(void) {

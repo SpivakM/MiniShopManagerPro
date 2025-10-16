@@ -1,4 +1,5 @@
 #pragma once
+#include "dependencies/item.h"
 #include "dependencies/add_item.h"
 #include "dependencies/buy_item.h"
 #include "dependencies/change_item_price.h"
@@ -6,7 +7,6 @@
 #include "dependencies/discount.h"
 #include "dependencies/find_item_by_name.h"
 #include "dependencies/find_item_with_max_price.h"
-#include "dependencies/item.h"
 #include "dependencies/list_items.h"
 #include "dependencies/list_under_100.h"
 #include "dependencies/total_price.h"
