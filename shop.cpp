@@ -3,9 +3,9 @@
 
 int main(void) {
 	int command;
+
 	printf("--- Menu ---\n");
 	printf("LIST OF COMMANDS\n");
-
 	vector<Item> items;
 
 	do {
@@ -13,7 +13,6 @@ int main(void) {
 		scanf("%d", &command);
 
 		// TODO: check inpurt
-		
 		
 
 		switch (command) {
