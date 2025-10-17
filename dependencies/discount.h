@@ -4,4 +4,4 @@
 #endif
 #include "item.h"
 
-void discount(vector<Item> items);
+void discount(vector<Item>& items);
