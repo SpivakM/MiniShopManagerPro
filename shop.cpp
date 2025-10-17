@@ -1,34 +1,66 @@
-#include <stdio.h>
 #include "shop.h"
+#include <stdio.h>
 
 int main(void) {
+	char *input;
 	int command;
-	printf("--- Menu ---\n");
-	printf("LIST OF COMMANDS\n");
+	bool cont = true;
 
-	vector<Item> items;
+	print_list_of_commands();
+
+    vector<Item> items;
 
 	do {
 		printf("Enter command: ");
-		scanf("%d", &command);
+		scanf("%s", input);
 
-		// check inpurt
+		if (sscanf(input, "%d", &command) != 1) {
+			printf("Input must containt command (number)\n");
+			continue;
+		}
 
 		switch (command) {
-			case 1: break;
-			case 2: break;
-			case 3: break;
-			case 4: break;
-			case 5: break;
-			case 6: break;
-			case 7: break;
-			case 8: break;
-			case 9: break;
-			case 10: break;
-			case 11: break;
-			default: break;
+			case 0:
+				cont = false;
+				break;
+			case 1:
+				print_list_of_commands();
+				break;
+			case 2: 
+				add_item(items);
+				break;
+			case 3: 
+				buy_item(items);
+				break;
+			case 4: 
+				change_item_price(items);
+				break;
+			case 5: 
+				delete_item(items);
+				break;
+			case 6: 
+				discount(items);
+				break;
+			case 7: 
+				find_item_by_name(items);
+				break;
+			case 8: 
+				find_item_with_max_price(items);
+				break;
+			case 9: 
+				list_items(items);
+				break;
+			case 10: 
+				list_under_100(items);
+				break;
+			case 11: 
+				total_price(items);
+				break;
+			default: 
+				printf("Wrong command. Try again.\n");
+				break;
 		} 
-	} while (1);
+	} while (cont);
 
 	return 0;
 }
