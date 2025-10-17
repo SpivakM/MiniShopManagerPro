@@ -9,4 +9,5 @@
 #include "dependencies/find_item_with_max_price.h"
 #include "dependencies/list_items.h"
 #include "dependencies/list_under_100.h"
+#include "dependencies/print_list_of_commands.h"
 #include "dependencies/total_price.h"
