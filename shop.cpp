@@ -1,10 +1,6 @@
 #include "shop.h"
 #include <stdio.h>
 
-#include <stdio.h>
-
-void print_list_of_commands();
-
 int main(void) {
 	char *input;
 	int command;
@@ -67,22 +63,4 @@ int main(void) {
 	} while (cont);
 
 	return 0;
-}
-
-void print_list_of_commands() {
-    printf("--- Menu ---\n");
-    printf("LIST OF COMMANDS\n");
-    printf(
-        "0 - Exit\n"
-        "1 - Menu\n"
-        "2 - Add item\n"
-        "3 - Buy item\n"
-        "4 - Change price of item\n"
-        "5 - Delete item\n"
-        "6 - Discount\n"
-        "7 - Find item by name\n"
-        "8 - List items\n"
-        "9 - List items with price under 100\n"
-        "10 - Total price of items\n");
-	
 }
