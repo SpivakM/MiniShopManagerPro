@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "shop.h"
 
+
+
 int main(void) {
 	int command;
 	printf("--- Menu ---\n");
