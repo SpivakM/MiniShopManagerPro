@@ -3,9 +3,9 @@
  - [How to compile](#how-to-compile)
  - [How to make changes](#how-to-make-changes)
  - [How to use](#how-to-use)
- - [Project structure](#project-structure)
 
 ## How to compile
+### Firstly, create the folder `./build/`. The project will not compile without it.
  - **MaxOS / Linux**:
 
     Run following command from project folder:
@@ -34,7 +34,7 @@
     `git status` 
     + If you need to remove a change \
     `git restore --staged file_to_reset`
-    ### IMPORTANT: If you made a placeholder for a different person's function, do not add it. Also don't make other people's function fully functional, just good enough for your testing purposes
+    ### IMPORTANT: If you have made a placeholder for a different person's function, do not add it to your commit. Also don't make other people's function fully functional, just good enough for your testing purposes
 1. Commit changes \
     `git commit -m "Your message"`
 1. Push your branch to origin \
@@ -49,6 +49,4 @@ Use the following commands to run the program
     `./build/shop`
 
 Use the commands from the menu
-
-## Project structure
 
