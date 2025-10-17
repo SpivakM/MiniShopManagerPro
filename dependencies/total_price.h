@@ -4,4 +4,4 @@
 #endif
 #include "item.h"
 
-void total_price(vector<Item> items);
+void total_price(vector<Item>& items);
