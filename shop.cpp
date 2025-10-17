@@ -1,8 +1,5 @@
 #include "shop.h"
-
 #include <stdio.h>
-
-void print_list_of_commands();
 
 int main(void) {
 	char *input;
