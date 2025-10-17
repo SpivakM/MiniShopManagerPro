@@ -8,7 +8,7 @@ int main(void) {
 
 	print_list_of_commands();
 
-	vector<Item> items;
+    vector<Item> items;
 
 	do {
 		printf("Enter command: ");
