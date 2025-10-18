@@ -4,7 +4,7 @@ void discount(vector<Item>& items) {
 
     bool found = false;
     for (auto& item : items) {
-        float price = item.price;
+        double price = item.price;
         
 
         if (price > 1000) {
