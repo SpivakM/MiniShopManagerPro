@@ -19,11 +19,21 @@
     `mingw32-make`
 
 ## How to make changes
+### First time
 1. Clone the repository \
     `git clone`
 1. Create your own branch with your function name \
     `git branch your_function_name` \
     `git checkout your_function_name`
+### Otherwise
+1. Go to dev branch \
+   `git checkout dev`
+1. Pull from origin \
+   `git pull`
+1. Go to your branch \
+   `git checkout your_function_name`
+1. Merge dev to your branch \
+    `git merge dev`
 1. Make changes to your function 
     + If you need to include other person's function, add \
     `#include "needed_function_name.h"` \

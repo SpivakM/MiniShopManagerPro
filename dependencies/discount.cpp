@@ -1,7 +1,6 @@
 #include "discount.h"
 
-
-void discount(vector<Item> items) {
+void discount(vector<Item>& items) {
 
     bool found = false;
     for (auto& item : items) {
