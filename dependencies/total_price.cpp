@@ -6,6 +6,6 @@ void total_price(vector<Item>& items) {
         total += item.price * item.amount;
     }
 
-    cout << "Загальна вартість складу: " << total << " грн\n";
+    cout << "Total cost of storage: " << total << " UAH\n";
 
 }
