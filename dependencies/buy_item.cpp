@@ -2,7 +2,7 @@
 
 void buy_item(vector<Item>& items) {
     string n;
-    cout << "Enter name of Item"<<endl;
+    printf("Enter Item`s name:\n");
     cin >> n;
     bool t=true;
     for(int i=0; i < items.size(); i++)
@@ -11,18 +11,26 @@ void buy_item(vector<Item>& items) {
         {
             if(items[i].amount > 0)
             {
-                items[i].amount--;
-                cout << "Item bought"<<endl;
+                if(items[i].price == 0)
+                {
+                    items[i].amount--;
+                    printf("Item bought for free \n", items[i].price);
+                }
+                else
+                {
+                    items[i].amount--;
+                    printf("Item bought for: %u \n", items[i].price);
+                }        
             }
             else
-                cout << "Item not avaible"<<endl;
+                printf("Item not avaible\n");
             t = false;
             break;
         }   
     }
     if(t)
     {
-        cout << "There is no such item"<<endl;
+        printf("There is no such item\n");
     }
     
 }
