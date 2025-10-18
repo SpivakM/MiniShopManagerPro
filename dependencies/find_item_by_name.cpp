@@ -1,7 +1,7 @@
 #include "find_item_by_name.h"
 #include <algorithm>
 
-int find_item_by_name(vector<Item> items) {
+int find_item_by_name(vector<Item>& items) {
 
     string name;
 

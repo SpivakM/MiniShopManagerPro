@@ -1,5 +1,5 @@
-shop: build/shop.o build/add_item.o build/buy_item.o build/change_item_price.o build/delete_item.o build/discount.o build/find_item_by_name.o build/find_item_with_max_price.o build/list_items.o build/list_under_100.o build/total_price.o shop.h
-	g++ -o build/shop build/shop.o build/add_item.o build/buy_item.o build/change_item_price.o build/delete_item.o build/discount.o build/find_item_by_name.o build/find_item_with_max_price.o build/list_items.o build/list_under_100.o build/total_price.o 
+shop: build/shop.o build/add_item.o build/buy_item.o build/change_item_price.o build/delete_item.o build/discount.o build/find_item_by_name.o build/find_item_with_max_price.o build/list_items.o build/list_under_100.o build/print_list_of_commands.o build/total_price.o shop.h
+	g++ -o build/shop build/shop.o build/add_item.o build/buy_item.o build/change_item_price.o build/delete_item.o build/discount.o build/find_item_by_name.o build/find_item_with_max_price.o build/list_items.o build/list_under_100.o build/print_list_of_commands.o build/total_price.o 
 
 build/shop.o: shop.cpp shop.h
 	g++ -o build/shop.o -c shop.cpp
@@ -30,6 +30,9 @@ build/list_items.o: dependencies/list_items.cpp dependencies/list_items.h
 
 build/list_under_100.o: dependencies/list_under_100.cpp dependencies/list_under_100.h
 	g++ -o build/list_under_100.o -c dependencies/list_under_100.cpp
+
+build/print_list_of_commands.o: dependencies/print_list_of_commands.cpp dependencies/print_list_of_commands.h
+	g++ -o build/print_list_of_commands.o -c dependencies/print_list_of_commands.cpp
 
 build/total_price.o: dependencies/total_price.cpp dependencies/total_price.h
 	g++ -o build/total_price.o -c dependencies/total_price.cpp
