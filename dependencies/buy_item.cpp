@@ -14,7 +14,7 @@ void buy_item(vector<Item>& items) {
                 if(items[i].price == 0)
                 {
                     items[i].amount--;
-                    printf("Item bought for free \n", items[i].price);
+                    printf("Item bought for free \n");
                 }
                 else
                 {
