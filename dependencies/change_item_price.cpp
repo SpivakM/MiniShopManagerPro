@@ -1,4 +1,5 @@
 #include "change_item_price.h"
+#include "find_item_by_name.h"
 
 void change_item_price(vector<Item>& items) {
     if (items.empty()) {
@@ -11,19 +12,20 @@ void change_item_price(vector<Item>& items) {
     cin.ignore();
     getline(cin, name);
 
-    for (auto& item : items) {
-        if (item.name == name) {
-            cout << "Enter new price: ";
-            cin >> item.price;
-
-            if (item.price > 0 && item.price <= 10000) {
-                cout << "Price updated to " << item.price << "\n";
-            } else {
-                cout << "Invalid price.\n";
-            }
-            return;
-        }
+    int index = find_item_by_name(items);
+    if (index == -1) {
+        cout << "Item not found!\n";
+        return;
     }
 
-    cout << "Item not found.\n";
+    double temp;
+    cout << "Enter new price: ";
+    cin >> temp;
+
+    if (temp > 0) {
+        items[index].price = temp;
+        cout << "Price updated to " << items[index].price << "\n";
+    } else {
+        cout << "Invalid price.\n";
+    }
 }
