@@ -3,7 +3,10 @@
  - [How to compile](#how-to-compile)
  - [How to make changes](#how-to-make-changes)
  - [How to use](#how-to-use)
+<<<<<<< HEAD
  - [How to test](#how-to-test)
+=======
+>>>>>>> 2a8d9a1720d06875db7117fc2225153c670aad7b
 
 ## How to compile
 ### Firstly, create the folder `./build/`. The project will not compile without it.
