@@ -2,6 +2,15 @@
 #include <algorithm>
 #include <limits>
 
+int find_item_by_name(vector<Item>& items, string name) {
+    for (int i = 0; i < items.size(); i++){
+        if (items[i].name == name){
+            return i;
+        }
+    }
+    return -1;
+}
+
 int find_item_by_name(vector<Item>& items) {
 
     string name;
