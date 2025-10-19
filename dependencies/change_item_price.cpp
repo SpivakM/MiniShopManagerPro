@@ -12,7 +12,7 @@ void change_item_price(vector<Item>& items) {
     cin.ignore();
     getline(cin, name);
 
-    int index = find_item_by_name(items);
+    int index = find_item_by_name(items, name);
     if (index == -1) {
         cout << "Item not found!\n";
         return;
