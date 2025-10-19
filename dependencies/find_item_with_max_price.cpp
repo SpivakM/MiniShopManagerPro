@@ -12,11 +12,13 @@ void find_item_with_max_price(vector<Item>& items) {
         }
     }
 
+    cout << "Item(s) with max price:" << endl;
+
     for (int i=0; i<items.size(); i++){
 
         if (items[i].price == max_price){
 
-            cout << items[i].name << endl;
+            cout << items[i].name <<", price -  "<< items[i].price <<", currently available - "<< items[i].amount << endl;
         }
     }
 }
