@@ -3,6 +3,7 @@
  - [How to compile](#how-to-compile)
  - [How to make changes](#how-to-make-changes)
  - [How to use](#how-to-use)
+ - [How to test](#how-to-test)
 
 ## How to compile
 ### Firstly, create the folder `./build/`. The project will not compile without it.
@@ -60,3 +61,15 @@ Use the following commands to run the program
 
 Use the commands from the menu
 
+## How to test
+### For testers
+1. Compile the program on dev branch
+1. Run it and break it
+1. When you find a bug, create an issue with following details: where it is, what causes it, how to replicate, possibly, how to fix it.
+1. After you created the issue, you should notify the person, who created the function \
+You can also create a list of test cases, that might be helpful to find bugs for a particular function
+### For developers
+1. After you recieve a notification about the bug, try to replicate it
+1. Fix it. If you have problems, ask other team members
+1. Test your fix extensively
+1. Commit it to YOUR branch and create a pull request
