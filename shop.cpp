@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int main(void) {
-	char *input = new char;
+	char *input = new char[1000];
 	int command;
 	bool cont = true;
 
