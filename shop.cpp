@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int main(void) {
-	char *input = new char[1000];
+	string input;
 	int command;
 	bool cont = true;
 
@@ -12,9 +12,9 @@ int main(void) {
 
 	do {
 		printf("Enter command: ");
-		scanf("%s", input);
+		cin >> input;
 
-		if (sscanf(input, "%d", &command) != 1) {
+		if (sscanf(input.c_str(), "%d", &command) != 1) {
 			printf("Input must containt command (number)\n");
 			continue;
 		}
