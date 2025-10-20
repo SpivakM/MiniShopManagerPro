@@ -22,14 +22,14 @@ int find_item_by_name(vector<Item>& items) {
 
     for (int i = 0; i < items.size(); i++){
         if (items[i].name == name){
-            cout << "\tname: " << name << endl;
-            cout << "\tprice: " << items[i].price << endl;
-            cout << "\tamount: " << items[i].amount << endl;
+            cout << "\tName: " << name << endl;
+            cout << "\tPrice: " << items[i].price << " UAH" << endl;
+            cout << "\tAmount: " << items[i].amount << endl;
             return i;
         }
     }
 
-    cout << "no such item" << endl;
+    cout << "No such item was found." << endl;
     return -1;
 
 }
