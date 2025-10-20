@@ -13,10 +13,12 @@ void list_under_100(vector<Item>& items) {
         return;
     }
     cout << " ------ List of items, cheaper than 100 UAH ------ " << endl;
-    cout << "   NAME - PRICE - AMOUNT  " << endl;
     for (int i = 0; i < items.size(); i++) {
         if (items[i].price <= 100) {
-            cout << i + 1 << ") " << items[i].name << " - " << items[i].price << " UAH - " << items[i].amount << endl;
+            cout << "\tName: " << items[i].name << endl;
+            cout << "\tPrice: " << items[i].price << " UAH" << endl;
+            cout << "\tAmount: " << items[i].amount << "" << endl;
+            cout << endl;
         }
     }
 }
