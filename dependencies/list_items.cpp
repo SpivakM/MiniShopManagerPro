@@ -6,8 +6,10 @@ void list_items(vector<Item>& items) {
         return;
     }
     cout << " ------ List of all items ------ " << endl;
-    cout << "   NAME - PRICE - AMOUNT  " << endl;
     for (int i = 0; i < items.size(); i++) {
-        cout << i + 1 << ") " << items[i].name << " - " << items[i].price << " UAH - " << items[i].amount << endl;
+        cout << "\tName: " << items[i].name << '.' << endl;
+        cout << "\tPrice: " << items[i].price << " UAH." << endl;
+        cout << "\tAmount: " << items[i].amount << '.' << endl;
+        cout << endl;
     }
 }
