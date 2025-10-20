@@ -16,7 +16,7 @@ void list_under_100(vector<Item>& items) {
     for (int i = 0; i < items.size(); i++) {
         if (items[i].price <= 100) {
             cout << "\tName: " << items[i].name << endl;
-            cout << "\tPrice: " << items[i].price << " UAH" << endl;
+            cout << std::fixed << std::setprecision(2) << "\tPrice: " << items[i].price << " UAH" << endl;
             cout << "\tAmount: " << items[i].amount << endl;
             cout << endl;
         }
