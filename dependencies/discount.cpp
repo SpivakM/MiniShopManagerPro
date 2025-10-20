@@ -10,7 +10,7 @@ void discount(vector<Item>& items) {
         if (price > 1000) {
             price *= 0.9; 
             item.price = price;
-            cout << "Product \"" << item.name << "\" got a 10% discount. New price: " << price << " UAH\n";
+            cout << "Product \"" << item.name << "\" got a 10% discount. New price: " << price << " UAH.\n";
             found = true;
         }
     }
