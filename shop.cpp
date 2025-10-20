@@ -15,7 +15,7 @@ int main(void) {
 		cin >> input;
 
 		if (sscanf(input.c_str(), "%d", &command) != 1) {
-			printf("Input must containt command (number)\n");
+			printf("Input must containt command (number).\n");
 			continue;
 		}
 

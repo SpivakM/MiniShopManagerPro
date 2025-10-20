@@ -24,7 +24,7 @@ void change_item_price(vector<Item>& items) {
 
     if (temp > 0) {
         items[index].price = temp;
-        cout << "Price updated to " << items[index].price << " UAH\n";
+        cout << "Price updated to " << items[index].price << " UAH.\n";
     } else {
         cout << "Invalid price.\n";
     }
