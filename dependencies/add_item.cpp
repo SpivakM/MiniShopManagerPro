@@ -5,6 +5,7 @@ void add_item(vector<Item>& items) {
     cout << "Enter the product name: ";
     cin.ignore();
     getline(cin, it.name);
+    int amount;
 
     if (int index = find_item_by_name(items, it.name); index != -1) {
         cout << "Item already exists. What amount of items should be added: ";
@@ -44,19 +45,20 @@ void add_item(vector<Item>& items) {
 
     cout << "Enter amount of product: ";
     while (true) {
-        if (!(cin >> it.amount)) {
+        if (!(cin >> amount)) {
             cin.clear();
             cin.ignore(10000, '\n');
             cout << "\nEnter numeric amount: ";
             continue;
         }
 
-        if (it.amount < 0) {
+        if (amount < 0) {
             cout << "\nAmount cannot be negative: ";
             continue;
         }
         break;
     }
+    it.amount = amount;
 
     items.push_back(it);
     cout << "Product added.\n";

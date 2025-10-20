@@ -6,6 +6,6 @@ void total_price(vector<Item>& items) {
         total += item.price * item.amount;
     }
 
-    cout << "Total cost of storage: " << total << " UAH\n";
+    cout << std::fixed << std::setprecision(2) << "Total cost of storage: " << total << " UAH\n";
 
 }
